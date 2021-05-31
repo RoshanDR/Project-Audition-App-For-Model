@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AddInfoActivityOfUser">
+
+    -<ScrollView android:layout_height="match_parent" android:layout_width="match_parent" android:layout_marginTop="40dp">
+
+
+    -<RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" android:paddingRight="20dp" android:paddingLeft="20dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#2b78e4" android:textSize="@dimen/headlabel" android:textStyle="bold" android:text="Contact Details" android:id="@+id/TV_contact_de"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="15dp" android:textColor="#000000" android:textSize="@dimen/pofileTV" android:text="Mobile(+91)" android:id="@+id/TV_mobile" android:layout_below="@+id/TV_contact_de"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/pofileET" android:id="@+id/ET_mobie" android:layout_below="@+id/TV_mobile" android:maxLength="10" android:inputType="phone"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="15dp" android:textSize="@dimen/pofileTV" android:text="@string/address" android:id="@+id/TV_address" android:layout_below="@+id/ET_mobie"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/pofileET" android:id="@+id/ET_address" android:layout_below="@+id/TV_address" android:inputType="textCapWords"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="15dp" android:textSize="@dimen/pofileTV" android:text="@string/pin_code" android:id="@+id/TV_pincode" android:layout_below="@+id/ET_address"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/pofileET" android:id="@+id/ET_pincode" android:layout_below="@+id/TV_pincode" android:maxLength="6" android:inputType="number"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="15dp" android:textSize="@dimen/pofileTV" android:text="@string/current_city" android:id="@+id/TV_currentcity" android:layout_below="@+id/ET_pincode"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/pofileET" android:id="@+id/ET_currentcity" android:layout_below="@+id/TV_currentcity" android:inputType="textCapWords"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="20dp" android:textColor="#2b78e4" android:textSize="@dimen/headlabel" android:textStyle="bold" android:text="About You" android:id="@+id/TV_abtu" android:layout_below="@id/ET_currentcity" android:layout_marginBottom="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="15dp" android:text="@string/gender" android:id="@+id/TV_gender" android:layout_below="@+id/TV_abtu"/>
+
+
+    -<RadioGroup android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="5dp" android:id="@+id/Radio_gender" android:layout_below="@+id/TV_gender" android:orientation="horizontal">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Male" android:id="@+id/Radio_male" android:checked="true"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Female" android:id="@+id/Radio_female"/>
+
+</RadioGroup>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="15dp" android:text="Age" android:id="@+id/TV_age" android:layout_below="@id/Radio_gender"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="7dp" android:paddingLeft="7dp" android:id="@+id/ET_age" android:layout_below="@+id/TV_age" android:maxLength="10" android:inputType="number" android:hint="years"/>
+
+    <ImageView android:layout_height="35dp" android:layout_width="35dp" android:id="@+id/IV_dob" android:layout_below="@id/TV_age" android:src="@drawable/ic_calendar" android:layout_toRightOf="@id/ET_age"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:textSize="@dimen/pofileTV" android:text="Height" android:id="@+id/TV_Height" android:layout_below="@+id/ET_age"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/pofileET" android:id="@+id/ET_Height" android:layout_below="@id/TV_Height" android:inputType="numberDecimal"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:textSize="@dimen/pofileTV" android:text="Weight(KG)" android:id="@+id/TV_Weight" android:layout_below="@+id/ET_Height"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/pofileET" android:id="@+id/ET_Weight" android:layout_below="@id/TV_Weight" android:inputType="number"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:textSize="@dimen/pofileTV" android:text="Race" android:id="@+id/TV_Race" android:layout_below="@id/ET_Weight"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/pofileET" android:id="@+id/ET_Race" android:layout_below="@id/TV_Race" android:maxLength="6" android:inputType="textCapWords"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:textSize="@dimen/pofileTV" android:text="Eye Color" android:id="@+id/TV_eye" android:layout_below="@id/ET_Race"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/pofileET" android:id="@+id/ET_eye" android:layout_below="@id/TV_eye" android:inputType="textCapWords"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="50dp" android:textColor="#005ECE" android:textSize="17dp" android:text="SAVE" android:id="@+id/btn_save" android:layout_below="@+id/ET_eye" android:layout_marginBottom="20dp" android:padding="3dp" android:elevation="5dp" android:background="@drawable/custom_button_next" android:drawableRight="@drawable/ic_nexta" android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
+</ScrollView>
+
+    <ProgressBar android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/progressbar" android:visibility="gone" android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

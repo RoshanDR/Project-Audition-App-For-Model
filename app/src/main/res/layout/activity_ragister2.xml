@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signn"
+    tools:context=".Ragister">
+
+    <EditText
+
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginRight="60dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:padding="6dp"
+        android:textColorHighlight="#39D8EC"
+        android:textColorLink="#2DCFE4"
+        android:textSize="18sp" />
+
+    <EditText
+
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginRight="60dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="6dp"
+        android:textSize="18sp" />
+
+    <EditText
+
+        android:id="@+id/et_no"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginRight="60dp"
+        android:hint="Full name"
+        android:inputType="text"
+        android:padding="6dp"
+        android:textSize="18sp" />
+
+    <EditText
+
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginRight="60dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="6dp"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/check_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_pass"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+
+        android:text="User"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/check_org"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_pass"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginLeft="209dp"
+        android:layout_marginTop="7dp"
+        android:text="Organization"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="154dp"
+        android:background="@null"
+        android:textColor="#fff" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="229dp"
+        android:layout_marginBottom="454dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

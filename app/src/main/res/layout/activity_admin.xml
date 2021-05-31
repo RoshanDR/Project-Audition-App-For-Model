@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homeadmin"
+    tools:context=".AdminActivity">
+
+
+    <Button
+        android:id="@+id/list_user"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@null"
+        android:textColor="#fff"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toStartOf="@+id/list_org"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/list_org"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="36dp"
+        android:background="@null"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chat_org"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="232dp"
+        android:background="@null"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chat_user"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="28dp"
+        android:background="@null"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

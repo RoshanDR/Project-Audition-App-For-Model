@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/crop"
+    tools:context=".AdditionalInfoOfUserActivity">
+
+    -<ScrollView android:layout_height="match_parent" android:layout_width="match_parent" android:layout_marginTop="80dp">
+
+
+    -<RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent"
+    android:layout_marginTop="50dp"
+    android:paddingRight="20dp" android:paddingLeft="20dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#2b78e4" android:textSize="20sp" android:layout_marginBottom="20dp" android:textStyle="bold" android:text="Contact Details" android:id="@+id/TV_contact_de"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="50dp" android:textSize="@dimen/headlabel" android:id="@+id/ET_mobie" android:focusable="false" android:editable="false" android:clickable="false" android:layout_marginLeft="20dp" android:background="@null" android:maxLength="10" android:drawablePadding="10dp" android:inputType="phone" android:drawableLeft="@drawable/ic_phone" android:layout_below="@+id/TV_mobile"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="5dp" android:textSize="@dimen/pofileET" android:id="@+id/ET_address" android:focusable="false" android:editable="false" android:clickable="false" android:layout_marginLeft="20dp" android:background="@null" android:drawablePadding="10dp" android:inputType="textCapWords" android:drawableLeft="@drawable/ic_addr" android:layout_below="@+id/ET_mobie"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="5dp" android:textSize="@dimen/pofileET" android:id="@+id/ET_currentcity" android:focusable="false" android:editable="false" android:clickable="false" android:layout_marginLeft="20dp" android:background="@null" android:drawablePadding="10dp" android:inputType="textCapWords" android:drawableLeft="@drawable/ic_city" android:layout_below="@+id/ET_address"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="5dp" android:textSize="@dimen/pofileET" android:id="@+id/ET_pincode" android:focusable="false" android:editable="false" android:clickable="false" android:layout_marginLeft="20dp" android:background="@null" android:maxLength="6" android:drawablePadding="10dp" android:inputType="number" android:drawableLeft="@drawable/ic_pin" android:layout_below="@+id/ET_currentcity"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="20dp" android:textColor="#2b78e4" android:textSize="20sp" android:layout_marginBottom="10dp" android:textStyle="bold" android:text="About You" android:id="@+id/TV_abtu" android:layout_below="@id/ET_pincode"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:layout_marginTop="15dp" android:textSize="14sp" android:textStyle="bold" android:text="Age" android:id="@+id/TV_age" android:layout_marginLeft="20dp" android:layout_below="@id/TV_abtu"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="15dp" android:textColor="#000000" android:textSize="14sp" android:id="@+id/ET_age" android:focusable="false" android:editable="false" android:clickable="false" android:background="@null" android:maxLength="10" android:inputType="number" android:layout_below="@+id/TV_abtu" android:layout_toRightOf="@+id/TV_age"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:layout_marginTop="15dp" android:textSize="14sp" android:textStyle="bold" android:text="Height (in)" android:id="@+id/TV_Height" android:layout_marginLeft="20dp" android:layout_below="@+id/ET_age"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:textColor="#000000" android:textSize="@dimen/pofileET" android:id="@+id/ET_Height" android:focusable="false" android:editable="false" android:clickable="false" android:background="@null" android:inputType="numberDecimal" android:layout_below="@id/ET_age" android:layout_toRightOf="@id/TV_Height"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:layout_marginTop="15dp" android:textSize="14sp" android:textStyle="bold" android:text="Weight(KG)" android:id="@+id/TV_Weight" android:layout_marginLeft="20dp" android:layout_below="@+id/TV_Height"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="15dp" android:textColor="#000000" android:textSize="@dimen/pofileET" android:id="@+id/ET_Weight" android:focusable="false" android:editable="false" android:clickable="false" android:background="@null" android:inputType="number" android:layout_below="@id/TV_Height" android:layout_toRightOf="@+id/TV_Weight"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:layout_marginTop="15dp" android:textSize="14sp" android:textStyle="bold" android:text="Race" android:id="@+id/TV_Race" android:layout_marginLeft="20dp" android:layout_below="@id/ET_Weight"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="15dp" android:textColor="#000000" android:textSize="@dimen/pofileET" android:id="@+id/ET_Race" android:focusable="false" android:editable="false" android:clickable="false" android:background="@null" android:inputType="textCapWords" android:layout_below="@id/TV_Weight" android:layout_toRightOf="@id/TV_Race"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:layout_marginTop="15dp" android:textSize="14sp" android:textStyle="bold" android:text="Eye Color" android:id="@+id/TV_eye" android:layout_marginLeft="20dp" android:layout_below="@id/ET_Race"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="15dp" android:textColor="#000000" android:textSize="14sp" android:id="@+id/ET_eye" android:focusable="false" android:editable="false" android:clickable="false" android:background="@null" android:inputType="textCapWords" android:layout_below="@id/TV_Race" android:layout_toRightOf="@+id/TV_eye"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="50dp" android:textColor="#005ECE" android:textSize="17dp" android:layout_marginBottom="20dp" android:text="Home " android:id="@+id/btn_home" android:background="@drawable/custom_button_next" android:drawablePadding="5dp" android:drawableLeft="@drawable/ic_nexta" android:layout_below="@+id/ET_eye" android:padding="3dp" android:elevation="5dp" android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
+</ScrollView>
+
+    <ProgressBar android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/progressbar" android:visibility="gone" android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
